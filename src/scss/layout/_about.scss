@@ -1,0 +1,88 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.seccion__about {
+  @include m.desktop {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+
+.seccion__about--item:not(:last-child) {
+  margin-bottom: 4rem;
+}
+
+.about__titulo {
+  margin-bottom: 4rem;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.about__description {
+  margin-bottom: 4rem;
+
+  span {
+    color: v.$blanco;
+    font-size: 2.2rem;
+    font-weight: 700;
+  }
+}
+
+.button {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  color: v.$blanco;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.button--primario {
+  background-color: v.$verde;
+}
+
+.button__icon {
+  margin-right: 0.5rem;
+  font-size: 1.8rem;
+}
+
+.about__galeria {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+
+  @include m.desktop {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.about__galeria--item {
+  text-align: center;
+
+  &:hover {
+    border-bottom: 0px solid transparent;
+  }
+
+  @include m.desktop {
+    &:hover {
+      color:v.$verde;
+      border-bottom: 3px solid v.$verde;
+      border-radius: 1rem;
+    }
+  }
+
+}
+
+.about__galeria--item {
+  @include m.desktop {
+    border-bottom: 3px solid transparent;
+    border-radius: 1rem;
+  }
+}
+
+.about__galeria--icon {
+  font-size: 5rem;
+}

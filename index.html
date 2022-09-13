@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portafolio</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" rel="preload" as="font" crossorigin="crossorigin">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="preload" href="./build/css/app.css" as="style">
+	<link rel="stylesheet" href="./build/css/app.css">
+	<script src="https://kit.fontawesome.com/eac912e3f1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header id="header" class="header">
+		<div class="barra" id="barra">
+			<div class="contenedor">
+				<a href="#" class="logo">
+					<p class="logo__nombre">Porta<span class="logo__span">folio</span></p>
+				</a>
+				<nav class="navegacion" id="navegacion">
+					<a class="navegacion__link" href="#header">Inicio</a>
+					<a class="navegacion__link" href="#about">Sobre mi</a>
+					<a class="navegacion__link" href="#services">Servicios</a>
+					<a class="navegacion__link" href="#portfolio">Portafolio</a>
+					<a class="navegacion__link" href="#certificates">Certificados</a>
+					<a class="navegacion__link" href="#contact">Contacto</a>
+				</nav>
+				<button class="navegacion--menu" id="navegacion--menu">
+					<i class="fa-solid fa-bars"></i>
+				</button>
+			</div>
+		</div>
+
+		<div class="header__texto">
+			<picture>
+				<source srcset="./build/img/my_photo.avif" type="image/avif">
+				<source srcset="./build/img/my_photo.webp" type="image/webp">
+				<img loading="lazy" width="200" height="300" class="header__photo" src="./build/img/my_photo.jpg" alt="mi foto de perfil">
+			</picture>
+			<h1 class="header__texto--primario"><span>Hello!</span> I'm Jorge Gutierrez <span>- Frontend Developer -</span></h1>
+		</div>
+	</header>
+
+	<section class="section" id="about">
+		<div class="contenedor">
+			<div class="section__titulo">
+				<h2>Sobre mi</h2>
+			</div>
+			<div class="seccion__about">
+				<div class="seccion__about--item">
+					<div class="about__titulo">
+						<h3>¿Quien soy?</h3>
+					</div>
+					<div class="about__description">
+						<p>
+							<span>
+								Hola! mi nombre es Jorge Gutierrez y soy una persona apasionada por la tecnología y el desarrollo web. 
+							</span>
+						</p>
+						<p>
+							Soy un desarrollador web Frontend, vivo en México actualmente estoy en proceso de obtener mi titulo como Ingeniero en Computación.
+						</p>
+						<p>
+							Me gusta todo lo que tenga que ver con metodologías y patrones dentro del desarrollo web considero que este es mi punto fuerte.
+						</p>
+					</div>
+					<a href="./files/CVJorgeIvanGutierrezYañez.docx" class="button button--primario" download>
+						<i class="button__icon fa-solid fa-file-arrow-down"></i>
+						Descargar CV
+					</a>
+				</div>
+
+				<div class="seccion__about--item">
+					<div class="about__titulo">Mis habilidades:</div>
+					<div class="about__galeria">
+						<div class="about__galeria--item">
+							<i class="about__galeria--icon fa-brands fa-html5"></i>
+							<p class="about__galeria--tecnologia">
+								HTML 5
+							</p>
+						</div>
+						<div class="about__galeria--item">
+							<i class="about__galeria--icon fa-brands fa-css3-alt"></i>
+							<p class="about__galeria--tecnologia">
+								CSS3
+							</p>
+						</div>
+						<div class="about__galeria--item">
+							<i class="about__galeria--icon fa-brands fa-js"></i>
+							<p class="about__galeria--tecnologia">
+								JavaScript
+							</p>
+						</div>
+						<div class="about__galeria--item">
+							<i class="about__galeria--icon fa-brands fa-sass"></i>
+							<p class="about__galeria--tecnologia">
+								Sass
+							</p>
+						</div>
+						<div class="about__galeria--item">
+							<i class="about__galeria--icon fa-brands fa-gulp"></i>
+							<p class="about__galeria--tecnologia">
+								Gulp.js
+							</p>
+						</div>
+						<div class="about__galeria--item">
+							<i class="about__galeria--icon fa-brands fa-npm"></i>
+							<p class="about__galeria--tecnologia">
+								NPM
+							</p>
+						</div>
+						<div class="about__galeria--item">
+							<i class="about__galeria--icon fa-brands fa-github"></i>
+							<p class="about__galeria--tecnologia">
+								GitHub
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section" id="services">
+		<div class="contenedor">
+			<div class="section__titulo">
+				<h2>Servicios</h2>
+			</div>
+
+			<div class="section__parrafo">
+				<p>Servicios que ofrezco a mis clientes</p>
+			</div>
+
+			<div class="services">
+				<div class="services__item">
+					<i class="services__icon fa-solid fa-palette"></i>
+					<h4>Diseño plano</h4>
+					<p class="services__description">
+						Facilita la vida del usuario a travéz de un diseño estético y atractivo.
+					</p>
+				</div>
+				<div class="services__item">
+					<i class="services__icon fa-solid fa-mobile-screen-button"></i>
+					<h4>Full responsive</h4>
+					<p class="services__description">
+						Sitio web adaptado a cualquier dispositivo movil o de escritorio.
+					</p>
+				</div>
+				<div class="services__item">
+					<i class="services__icon fa-solid fa-code"></i>
+					<h4>Desarrollo</h4>
+					<p class="services__description">
+						Se añade características interactivas a tu sitio web.
+					</p>
+				</div>
+				<div class="services__item">
+					<i class="services__icon fa-solid fa-pen-ruler"></i>
+					<h4>Maquetación web</h4>
+					<p class="services__description">
+						Pasar de un diseño al desarrollo web.
+					</p>
+				</div>
+				<div class="services__item">
+					<i class="services__icon fa-solid fa-file-code"></i>
+					<h4>Single page aplication</h4>
+					<p class="services__description">
+						Ocupe el 100% de tu contenido en la pagina web sin la necesidad de ir a un enlace externo.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section" id="portfolio">
+		<div class="contenedor">
+			<div class="section__titulo">
+				<h2>Portafolio</h2>
+			</div>
+
+			<div class="section__parrafo">
+				<p>Mostrando algunos de mis trabajos.</p>
+			</div>
+
+			<div class="portafolio__section">
+				<div class="portafolio__item">
+					<figure class="portafolio__item--figure">
+						<picture>
+							<source srcset="./build/img/Portafolio_1.avif" type="image/avif">
+							<source srcset="./build/img/Portafolio_1.webp" type="image/webp">
+							<img loading="lazy" width="200" height="300" class="portafolio__photo" src="./build/img/Portafolio_1.png" alt="imagen sitio web">
+						</picture>
+						<figcaption class="portafolio__caption">
+							<div class="portafolio__titulo">
+								<h5>Sitio Freelancer</h5>
+							</div>
+							<p class="portafolio__description">
+								Trabajo desarrollado con HTML5 y CSS3
+							</p>
+							<div>
+								<a class="button button--primario" href="https://site-freelancer-jorge-gutierrez.netlify.app/" target="_blank">
+									<i class="button__icon fa-solid fa-earth-americas"></i>
+									Sitio web
+								</a>
+								<a class="button button--primario" href="https://github.com/trabucoaluca/Sitio-Freelancer" target="_blank">
+									<i class="button__icon fa-solid fa-code-branch"></i>
+									Repositorio
+								</a>
+							</div>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="portafolio__item">
+					<figure class="portafolio__item--figure">
+						<picture>
+							<source srcset="./build/img/Portafolio_2.avif" type="image/avif">
+							<source srcset="./build/img/Portafolio_2.webp" type="image/webp">
+							<img loading="lazy" width="200" height="300" class="portafolio__photo" src="./build/img/Portafolio_2.png" alt="imagen tienda">
+						</picture>
+						<figcaption class="portafolio__caption">
+							<div class="portafolio__titulo">
+								<h5>Tienda</h5>
+							</div>
+							<p class="portafolio__description">
+								Trabajo desarrollado con HTML5 y CSS3
+							</p>
+							<div>
+								<a class="button button--primario" href="https://site-front-end-store-jorge-gutierrez.netlify.app/" target="_blank">
+									<i class="button__icon fa-solid fa-earth-americas"></i>
+									Sitio web
+								</a>
+								<a class="button button--primario" href="https://github.com/trabucoaluca/Front-End-Store" target="_blank">
+									<i class="button__icon fa-solid fa-code-branch"></i>
+									Repositorio
+								</a>
+							</div>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="portafolio__item">
+					<figure class="portafolio__item--figure">
+						<picture>
+							<source srcset="./build/img/Portafolio_3.avif" type="image/avif">
+							<source srcset="./build/img/Portafolio_3.webp" type="image/webp">
+							<img loading="lazy" width="200" height="300" class="portafolio__photo" src="./build/img/Portafolio_3.png" alt="imagen cafe">
+						</picture>
+						<figcaption class="portafolio__caption">
+							<div class="portafolio__titulo">
+								<h5>Blog de café</h5>
+							</div>
+							<p class="portafolio__description">
+								Trabajo desarrollado con HTML5 y CSS3
+							</p>
+							<div>
+								<a class="button button--primario" href="https://site-blog-de-cafe-jorge-gutierrez.netlify.app/" target="_blank">
+									<i class="button__icon fa-solid fa-earth-americas"></i>
+									Sitio web
+								</a>
+								<a class="button button--primario" href="https://github.com/trabucoaluca/Blog-de-cafe" target="_blank">
+									<i class="button__icon fa-solid fa-code-branch"></i>
+									Repositorio
+								</a>
+							</div>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="portafolio__item">
+					<figure class="portafolio__item--figure">
+						<picture>
+							<source srcset="./build/img/Portafolio_4.avif" type="image/avif">
+							<source srcset="./build/img/Portafolio_4.webp" type="image/webp">
+							<img loading="lazy" width="200" height="300" class="portafolio__photo" src="./build/img/Portafolio_4.png" alt="imagen festival">
+						</picture>
+						<figcaption class="portafolio__caption">
+							<div class="portafolio__titulo">
+								<h5>Festival de musica</h5>
+							</div>
+							<p class="portafolio__description">
+								Trabajo desarrollado con HTML5, CSS3 y SASS
+							</p>
+							<div>
+								<a class="button button--primario" href="https://site-festivalmusic-jorge-gutierrez.netlify.app/" target="_blank">
+									<i class="button__icon fa-solid fa-earth-americas"></i>
+									Sitio web
+								</a>
+								<a class="button button--primario" href="https://github.com/trabucoaluca/RockEDMFestival" target="_blank">
+									<i class="button__icon fa-solid fa-code-branch"></i>
+									Repositorio
+								</a>
+							</div>
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section" id="certificates">
+		<div class="contenedor">
+			<div class="section__titulo">
+				<h2>Certificados</h2>
+			</div>
+
+			<div class="section__parrafo">
+				<p>Mis certificados que he obtenido.</p>
+			</div>
+
+			<div class="certificates">
+				<div class="certificates__item">
+					<picture>
+						<source srcset="./build/img/certi_scrum.avif" type="image/avif">
+						<source srcset="./build/img/certi_scrum.webp" type="image/webp">
+						<img loading="lazy" width="200" height="300" class="certificate__photo" src="./build/img/certi_scrum.png" alt="imagen scrum">
+					</picture>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="section" id="contact">
+		<div class="contenedor">
+			<div class="section__titulo">
+				<h2>Contacto</h2>
+			</div>
+
+			<div class="section__parrafo">
+				<p>Siempre disponible para iniciar las etapas practicas, no dudes en contactarme!</p>
+			</div>
+			
+			<div class="contact">
+				<div class="contact__item">
+					<a class="contact__link" href="https://www.linkedin.com/in/jorge-i-gutierrez-y" target="_blank">
+						<i class="contact__icon fa-brands fa-linkedin"></i>
+						LinkedIn
+					</a>
+				</div>
+				<div class="contact__item">
+					<a class="contact__link" href="mailto:ing.jorgegtzy@gmail.com" target="_blank">
+						<i class="contact__icon fa-solid fa-paper-plane"></i>
+						Gmail
+					</a>
+				</div>
+				<div class="contact__item">
+					<a class="contact__link" href="https://github.com/trabucoaluca" target="_blank">
+						<i class="contact__icon fa-brands fa-github"></i>
+						GitHub
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="footer__texto">
+			<p>Copyright© 2022. Jorge Gutierrez
+				<span>
+					Todos los derechos reservados
+				</span>
+			</p>
+		</div>
+	</footer>
+
+	<script src="./build/js/app.js"></script>
+</body>
+
+</html>

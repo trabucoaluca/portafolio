@@ -1,0 +1,105 @@
+@use 'variables' as v;
+@use 'base/mixins' as m;
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+  @include m.telefonoM {
+    font-size: 43.75%;
+  }
+
+  @include m.tabletM {
+    font-size: 50%;
+  }
+
+  @include m.desktopM {
+    font-size: 56.25%;
+  }
+
+  @include m.desktopXL {
+    font-size: 70.00%;
+  }
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: v.$fuente_principal;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: v.$gris;
+  background-color: v.$negro;
+}
+
+.contenedor {
+  max-width: 120rem !important;
+  width: 95%;
+  margin: 0 auto !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+h5 {
+  font-size: 1.6rem;
+}
+
+// Seccion
+.section {
+  padding: 5rem 0 0 0;
+}
+
+.section__titulo {
+  margin-bottom: 4rem;
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: v.$blanco;
+    font-weight: 400;
+  }
+}
+
+.section__parrafo {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+h2 {
+  &:after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.2rem;
+    margin: 0 auto 0.5rem auto;
+    background-color: v.$verde;
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}

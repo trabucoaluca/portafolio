@@ -1,0 +1,46 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.services {
+  @include m.tablet {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+.services__item {
+  padding: 3rem;
+  text-align: center;
+
+  @include m.tablet {
+    padding: 0;
+  }
+
+  &:hover {
+    border-bottom: 0px solid transparent;
+  }
+
+  @include m.desktop {
+    &:hover {
+      color:v.$verde;
+      border-bottom: 3px solid v.$verde;
+      border-radius: 1rem;
+    }
+  }
+
+  h4 {
+    color: v.$blanco;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+}
+
+.services__icon {
+  font-size: 5rem;
+  margin-bottom: 1.5rem;
+}
+
+.services__description {
+  color: v.$gris !important;
+}
